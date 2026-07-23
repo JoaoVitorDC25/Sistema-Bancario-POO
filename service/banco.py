@@ -33,14 +33,11 @@ class Banco():
         
         """Cria uma nova conta para um cliente existente."""
         
-        # Número da nova conta será baseado no total de contas + 1
         numero_conta = Conta.get_total_contas() + 1
         
-        # Cria conta corrente se o tipo informado for "corrente"
         if tipo.lower() == 'corrente':
             nova_conta = ContaCorrente(numero_conta, cliente)
         
-        # Cria conta poupança se o tipo informado for "poupanca"
         elif tipo.lower() == 'poupanca':
             nova_conta = ContaPoupanca(numero_conta, cliente)
         
@@ -60,7 +57,7 @@ class Banco():
 
     # Método para buscar uma conta pelo número
     def buscar_conta(self, numero_conta: int) -> Conta:
-        
+          
         """Busca uma conta pelo seu número."""
         
         # Tenta recuperar a conta do dicionário
