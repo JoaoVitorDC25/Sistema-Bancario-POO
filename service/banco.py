@@ -23,7 +23,7 @@ class Banco():
             return self._cliente[cpf]
         
         novo_cliente = Cliente(nome, cpf)
-        self._clientes[cpf] = novo_cliente
+        self._cliente[cpf] = novo_cliente
         
         print(f"Cliente {nome} adicionado com sucesso!")
         return novo_cliente
