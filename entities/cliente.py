@@ -7,6 +7,5 @@ class Cliente:
     
     def adicionar_conta(self, conta):
             self.contas.append(conta)
-            
     def __str__(self):
         return f"Cliente: {self.nome}, CPF: {self.cpf}, Contas: {len(self.contas)}"
