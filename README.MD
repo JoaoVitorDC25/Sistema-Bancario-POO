@@ -59,10 +59,12 @@ SISTEMA-BANCARIO-POO/
 │   ├── __init__.py
 │   └── exceptions.py
 │
+├── config.py
+│
 ├── main.py
 │
 ├── README.md   
-├── requirements.txt
+├── LICENSE
 └── .gitignore
 ```
 
@@ -109,19 +111,19 @@ Arquivo principal da aplicação.
 ## 1. Clone o repositório
 
 ```bash
-git clone https://github.com/JoaoVitorDC25/Sistema-Bancario.git
+git clone https://github.com/JoaoVitorDC25/Sistema-Bancario-POO.git
 ```
 
 ## 2. Entre na pasta do projeto
 
 ```bash
-cd Sistema-Bancario
+cd Sistema-Bancario-POO
 ```
 
 ## 3. Execute a aplicação
 
 ```bash
-python dsa_mini_projeto2.py
+python main.py
 ```
 
 ---
@@ -161,14 +163,14 @@ https://github.com/JoaoVitorDC25
 
 ### Áreas de interesse
 
-- 📊 Ciência de Dados
-- 🤖 Inteligência Artificial
-- 👁️ Visão Computacional
-- 🐍 Desenvolvimento em Python
+-  Ciência de Dados
+-  Inteligência Artificial
+-  Visão Computacional
+-  Desenvolvimento em Python
 
 ---
 
-## ⭐ Projeto em desenvolvimento
+## Projeto em desenvolvimento
 
 Este projeto integra meu portfólio de estudos em Python e Programação Orientada a Objetos.
 
