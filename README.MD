@@ -1,4 +1,4 @@
-# 🏦 Sistema Bancário em Python
+# Sistema Bancário em Python
 
 Projeto desenvolvido em **Python** utilizando os conceitos de **Programação Orientada a Objetos (POO)** para simular um sistema bancário através de uma interface em linha de comando (CLI).
 
@@ -96,7 +96,7 @@ Contém recursos auxiliares utilizados pelo sistema.
 
 ---
 
-###  `dsa_mini_projeto2.py`
+###  `main.py`
 
 Arquivo principal da aplicação.
 
