@@ -36,6 +36,7 @@ class Conta(ABC):
         """
         return self._saldo
     
+    @classmethod
     def get_total_contas(cls):
         
         """
@@ -47,7 +48,9 @@ class Conta(ABC):
         
         if valor>0:
             self._saldo += valor
-            self._historico.append(f"Depósito: +{valor:.2f} em {datetime.now()}")
+            self._historico.append((datetime.now(), f"Depósito de R${valor:.2f}"))
+            print(f"Depósito de R${valor:.2f} realizado com sucesso.")
+
         
         else:
             print("Valor de depósito inválido. O valor deve ser positivo.")
@@ -78,7 +81,7 @@ class Conta(ABC):
             print("Nenhuma transação realizada.")
         
         for data, transacao in self._historico:
-            print(f"{data.strftime('%Y-%m-%d %H:%M:%S')}: {transacao}")
+            print(f"- {data.strftime('%Y-%m-%d %H:%M:%S')}: {transacao}")
             
         print ("----------------------------------------\n")
         pass
@@ -128,7 +131,7 @@ class ContaPoupanca(Conta):
             
             raise SaldoInsuficienteError(self._saldo, valor)
         
-        self_saldo -= valor
+        self._saldo -= valor
         
         self._historico.append((datetime.now(), f"Saque de R${valor:.2f}"))
         print(f"Saque de R${valor:.2f} realizado com sucesso.")
